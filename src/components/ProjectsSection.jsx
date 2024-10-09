@@ -1,4 +1,5 @@
 import { useLanguage } from '../contexts/LanguageContext';
+
 function ProjectsSection() {
   const projects = ['Workintech', 'Random Jokes', 'Journey'];
   const { language } = useLanguage();
@@ -29,8 +30,8 @@ function ProjectsSection() {
                 </div>
               </div>
               <div className="flex justify-between gap-4 mt-2">
-                <a href="" className="text-[#3730A3] underline ">Github</a>
-                <a href="" className="text-[#3730A3] underline">View Site</a>
+                <a href="https://github.com/mdhazar" className="text-[#3730A3] underline ">Github</a>
+                <a href="https://vercel.com/mehmet-s-projects-7ea2b191" className="text-[#3730A3] underline">View Site</a>
               </div>
             </div>
           </div>

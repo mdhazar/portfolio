@@ -1,9 +1,10 @@
-// eslint-disable-next-line react/prop-types
+
 import { createContext, useContext, useState } from 'react';
 import { languageData } from '../languageData';
 
 const LanguageContext = createContext();
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useLanguage = () => useContext(LanguageContext);
 
 
