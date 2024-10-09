@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Divider from './components/Divider';
 import './App.css';
 import { useLocalStorage } from './hooks/useLocalStorage';
+import "@fontsource/inter";
 
 function App() {
   const [darkMode, setDarkMode] = useLocalStorage('darkMode', false);

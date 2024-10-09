@@ -3,7 +3,11 @@ export default {
   content: ["./src/**/*.{html,js,jsx}"],
   darkMode: 'selector',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+      },
+    },
     container: {
       center: true,
       padding: "1rem",
