@@ -1,8 +1,10 @@
+import { useLanguage } from '../contexts/LanguageContext';
 function ProjectsSection() {
   const projects = ['Workintech', 'Random Jokes', 'Journey'];
+  const { language } = useLanguage();
   return (
     <section className="mb-12">
-      <h3 className="text-2xl font-bold mb-8 dark:text-[#AEBCCF]">Projects</h3>
+      <h3 className="text-2xl font-bold mb-8 dark:text-[#AEBCCF]">{language.projects}</h3>
      
       <div className="grid grid-cols-3 gap-10"> 
         {projects.map((project) => (

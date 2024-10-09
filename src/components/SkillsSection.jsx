@@ -1,8 +1,10 @@
+import { useLanguage } from '../contexts/LanguageContext';
 function SkillsSection() {
   const skills = ['JavaScript', 'React.js', 'Node.js'];
+  const { language } = useLanguage();
   return (
     <section className="mb-6">
-      <h3 className="text-2xl font-l mb-2 dark:text-[#AEBCCF]">Skills</h3>
+      <h3 className="text-2xl font-l mb-2 dark:text-[#AEBCCF]">{language.skills}</h3>
       <div className="grid grid-cols-3 gap-6">
         {skills.map((skill) => (
           <div key={skill} className="pr-8 ">

@@ -1,9 +1,10 @@
 import parmak from '../assets/parmak.png'; 
-
+import { useLanguage } from '../contexts/LanguageContext';
 function Footer() {
+  const { language } = useLanguage();
   return (
     <footer className="bg-[#F9F9F9] dark:bg-black p-8 text-left mt-12  px-16 lg:px-16 xl:px 24 2xl:px-32">
-      <p className="text-lg font-semibold mb-4">Let&#39;s work together on<br/> your next product.</p>
+      <p className="text-lg font-semibold mb-4">{language.footer1}<br/> {language.footer2}</p>
       
       <div className="flex justify-between items-center gap-4 mt-4">
     
