@@ -1,7 +1,7 @@
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from "../contexts/LanguageContext";
 
 function ProjectsSection() {
-  const projects = ['Workintech', 'Random Jokes', 'Journey'];
+  const projects = ["Workintech", "Random Jokes", "Journey"];
   const { language } = useLanguage();
 
   return (
@@ -25,7 +25,8 @@ function ProjectsSection() {
             <h4 className="text-xl font-semibold mb-2">{project}</h4>
 
             <p className="text-gray-600 dark:text-white mb-4">
-              A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.
+              A simple, customizable, minimal setup cookie plugin that allows
+              your users to select which cookies to accept or decline.
             </p>
 
             <div className="flex flex-col">

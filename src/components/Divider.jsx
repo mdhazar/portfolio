@@ -1,4 +1,4 @@
-import vectorLine from '../assets/Vector.png';
+import vectorLine from "../assets/Vector.png";
 
 const Divider = () => {
   return (

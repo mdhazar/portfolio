@@ -1,6 +1,6 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { useLanguage } from '../contexts/LanguageContext';
-import { useLinks } from '../contexts/LinksContext';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useLanguage } from "../contexts/LanguageContext";
+import { useLinks } from "../contexts/LinksContext";
 
 function MainSection() {
   const { language } = useLanguage();
@@ -9,7 +9,6 @@ function MainSection() {
   return (
     <main className=" mt-12 mb-12">
       <div className="flex flex-col lg:flex-row justify-between h-[500px]">
-        
         <div className="text-left lg:w-1/2 h-full flex flex-col justify-between">
           <div>
             <h2 className="text-4xl font-bold mb-2 dark:text-[#AEBCCF]">
