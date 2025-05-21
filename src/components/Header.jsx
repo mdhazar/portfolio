@@ -1,29 +1,43 @@
 import { useLanguage } from "../contexts/LanguageContext";
 import { useLinks } from "../contexts/LinksContext";
+
 function Header() {
   const { language } = useLanguage();
   const links = useLinks();
+
+  const handleEmailClick = (e) => {
+    e.preventDefault();
+    window.location.href = encodeURI(links.email);
+  };
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="flex justify-between items-center px-8 py-4">
       <div className="flex items-center gap-16 ml-auto">
-        <a
-          href="#skills"
+        <button
+          onClick={() => scrollToSection("skills")}
           className="bg-transparent border-none text-[#6B7280] no-underline cursor-pointer"
         >
           {language.skills}
-        </a>
-        <a
-          href="#projects"
+        </button>
+        <button
+          onClick={() => scrollToSection("projects")}
           className="bg-transparent border-none text-[#6B7280] no-underline cursor-pointer"
         >
           {language.projects}
-        </a>
-        <a
-          href={links.email}
+        </button>
+        <button
+          onClick={handleEmailClick}
           className="border border-[#4338CA] text-[#4338CA] py-3 px-6 rounded-md flex items-center"
         >
           {language.hireMe}
-        </a>
+        </button>
       </div>
     </header>
   );
