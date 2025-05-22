@@ -54,16 +54,16 @@ function SkillsSection() {
         {language.skills}
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="bg-gray-300 dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="bg-gray-300 dark:bg-gray-800 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 "
           >
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">{skill.icon}</span>
+            <div className="flex items-center mb-2">
+              <span className="text-xl mr-2">{skill.icon}</span>
               <div>
-                <h4 className="text-xl font-semibold text-[#4338CA] dark:text-[#B7AAFF]">
+                <h4 className="text-base font-semibold text-[#4338CA] dark:text-[#B7AAFF]">
                   {skill.name}
                 </h4>
                 <span className="text-sm text-gray-600 dark:text-gray-400">
