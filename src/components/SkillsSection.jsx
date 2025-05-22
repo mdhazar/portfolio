@@ -5,7 +5,7 @@ function SkillsSection() {
 
   const skills = [
     {
-      name: "JavaScript",
+      name: "JavaScript/TypeScript",
 
       category: "Frontend",
       icon: "💻",
