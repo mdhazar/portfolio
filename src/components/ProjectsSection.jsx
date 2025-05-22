@@ -36,7 +36,7 @@ function ProjectsSection() {
     },
     {
       id: 3,
-      title: "Ecommerce Website with Jquery",
+      title: "Ecommerce with Jquery",
       description: "A beautiful ecommerce website built with Jquery",
       image: ecommerce_jquery,
       githubLink:
@@ -114,7 +114,7 @@ function ProjectsSection() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -132,45 +132,45 @@ function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="mb-12">
+    <section id="projects" className="mb-12 font-sans">
       <h3 className="text-2xl font-bold mb-8 dark:text-[#AEBCCF]">
         {language.projects}
       </h3>
-      <div className="mx-auto h-[600px]">
+      <div className="mx-auto min-h-[600px]">
         <Slider {...settings}>
           {projects.map((project) => (
-            <div key={project.id} className="px-4 h-[550px]">
-              <div className="bg-gray-300 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
-                <div className="h-[250px] overflow-hidden">
+            <div key={project.id} className="px-2 h-[500px] gap-2">
+              <div className="bg-gray-300 dark:bg-gray-800 rounded-lg shadow-lg h-full flex flex-col">
+                <div className="h-[300px] relative">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-fit object-center"
                   />
                 </div>
-                <div className="p-6 flex-1 flex flex-col">
-                  <h4 className="text-xl font-bold mb-2 dark:text-white">
+                <div className="p-2 flex-1 flex flex-col">
+                  <h4 className="text-base font-bold mb-2 dark:text-white text-nowrap">
                     {project.title}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4 flex-1">
+                  <p className="text-gray-600 dark:text-gray-300 mb-2 flex-1 text-[13px] leading-normal">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-2">
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm dark:text-gray-300"
+                        className="px-2 py-0 bg-gray-200 dark:bg-gray-700 rounded-full text-[12px] dark:text-gray-300"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <div className="flex gap-4 mt-auto">
+                  <div className="flex gap-6 mt-auto">
                     <a
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                      className="text-blue-600 dark:text-blue-400 hover:underline text-[14px]"
                     >
                       GitHub
                     </a>
@@ -178,7 +178,7 @@ function ProjectsSection() {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                      className="text-blue-600 dark:text-blue-400 hover:underline text-[14px]"
                     >
                       Live Demo
                     </a>
