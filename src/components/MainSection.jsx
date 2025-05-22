@@ -22,25 +22,31 @@ function MainSection() {
           </div>
 
           <div className="flex gap-4">
-            <a href={links.email}>
+            <a
+              href={links.email}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = encodeURI(links.email);
+              }}
+            >
               <button className="bg-[#4338CA] text-white py-3 px-6 rounded-md dark:bg-[#E1E1FF] dark:text-black">
                 {language.hireMe}
               </button>
             </a>
-            <a href={links.github}>
+            <a href={links.github} target="_blank" rel="noopener noreferrer">
               <button className="border border-[#4338CA] text-[#4338CA] py-3 px-6 rounded-md flex items-center dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF]">
                 <FaGithub className="mr-2" /> Github
               </button>
             </a>
-            <a href={links.linkedin}>
+            <a href={links.linkedin} target="_blank" rel="noopener noreferrer">
               <button className="border border-[#4338CA] text-[#4338CA] py-3 px-6 rounded-md flex items-center dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF]">
                 <FaLinkedin className="mr-2" /> Linkedin
               </button>
             </a>
           </div>
         </div>
-
-        {/* Image Side */}
         <div className="lg:w-1/3 flex justify-center lg:justify-end mt-8 lg:mt-0 h-full">
           <img
             src={`https://picsum.photos/500`}

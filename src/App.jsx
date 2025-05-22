@@ -9,22 +9,38 @@ import Divider from "./components/Divider";
 import "./App.css";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import "@fontsource/inter";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 function App() {
   const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
 
   return (
     <div className={darkMode ? "dark" : null}>
-      <div className="bg-white dark:bg-[#252128] font-sans min-h-screen text-gray-900 dark:text-gray-100">
+      <div className="bg-gray-200 dark:bg-[#252128] font-sans min-h-screen text-gray-900 dark:text-gray-100">
         <div className="px-8 lg:px-16 xl:px 24 2xl:px-32">
           <ModeSwitch setDarkMode={setDarkMode} darkMode={darkMode} />
           <Header />
-          <MainSection />
-          <SkillsSection />
-          <Divider />
-          <ProfileSection />
-          <Divider />
-          <ProjectsSection />
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={() => (
+                <>
+                  <MainSection />
+                  <SkillsSection />
+                  <Divider />
+                  <ProjectsSection />
+                  <Divider />
+                  <ProfileSection />
+                </>
+              )}
+            />
+            <Route path="/skills" component={SkillsSection} />
+            <Route path="/projects" component={ProjectsSection} />
+            <Route path="*">
+              <Redirect to="/" />
+            </Route>
+          </Switch>
         </div>
         <Footer />
       </div>

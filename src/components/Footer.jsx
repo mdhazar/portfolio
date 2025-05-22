@@ -5,7 +5,7 @@ function Footer() {
   const { language } = useLanguage();
   const links = useLinks();
   return (
-    <footer className="bg-[#F9F9F9] dark:bg-black p-8 text-left mt-12  px-16 lg:px-16 xl:px 24 2xl:px-32">
+    <footer className="bg-gray-300 dark:bg-black p-8 text-left mt-12  px-16 lg:px-16 xl:px 24 2xl:px-32">
       <p className="text-lg font-semibold mb-4">
         {language.footer1}
         <br /> {language.footer2}
