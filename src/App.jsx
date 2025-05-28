@@ -9,10 +9,17 @@ import Divider from "./components/Divider";
 import "./App.css";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import "@fontsource/inter";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Outlet, useNavigate, useLocation } from "react-router-dom";
 
 function App() {
   const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Redirect to home if on an unknown route
+  if (location.pathname !== "/") {
+    navigate("/");
+  }
 
   return (
     <div className={darkMode ? "dark" : null}>
@@ -20,27 +27,13 @@ function App() {
         <div className="px-8 lg:px-16 xl:px 24 2xl:px-32">
           <ModeSwitch setDarkMode={setDarkMode} darkMode={darkMode} />
           <Header />
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={() => (
-                <>
-                  <MainSection />
-                  <SkillsSection />
-                  <Divider />
-                  <ProjectsSection />
-                  <Divider />
-                  <ProfileSection />
-                </>
-              )}
-            />
-            <Route path="/skills" component={SkillsSection} />
-            <Route path="/projects" component={ProjectsSection} />
-            <Route path="*">
-              <Redirect to="/" />
-            </Route>
-          </Switch>
+          <Outlet />
+          <MainSection />
+          <SkillsSection />
+          <Divider />
+          <ProjectsSection />
+          <Divider />
+          <ProfileSection />
         </div>
         <Footer />
       </div>
