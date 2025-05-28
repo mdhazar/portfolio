@@ -114,7 +114,7 @@ function ProjectsSection() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -122,7 +122,21 @@ function ProjectsSection() {
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -149,10 +163,10 @@ function ProjectsSection() {
                   />
                 </div>
                 <div className="p-2 flex-1 flex flex-col">
-                  <h4 className="text-base font-bold mb-2 dark:text-white text-nowrap">
+                  <h4 className="text-base font-bold mb-2 dark:text-white ">
                     {project.title}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-300 mb-2 flex-1 text-[13px] leading-normal">
+                  <p className="text-gray-600 dark:text-gray-300 mb-2 flex-1 text-[13px] ">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-2">
