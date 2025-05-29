@@ -153,13 +153,13 @@ function ProjectsSection() {
       <div className="mx-auto min-h-[600px]">
         <Slider {...settings}>
           {projects.map((project) => (
-            <div key={project.id} className="px-2 h-[500px] gap-2">
-              <div className="bg-gray-300 dark:bg-gray-800 rounded-lg shadow-lg h-full flex flex-col">
-                <div className="h-[300px] relative">
+            <div key={project.id} className="px-2 h-[500px] gap-2   ">
+              <div className="bg-gray-300 dark:bg-gray-800 rounded-xl shadow-lg h-full flex flex-col border">
+                <div className="h-[300px] relative ">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="absolute inset-0 w-full h-full object-fit object-center"
+                    className="absolute inset-0 w-full h-full object-fit object-center rounded-t-xl"
                   />
                 </div>
                 <div className="p-2 flex-1 flex flex-col">

@@ -18,7 +18,7 @@ function Header() {
   };
 
   return (
-    <header className="flex justify-between items-center px-8 py-4">
+    <header className="flex justify-between items-center py-4">
       <div className="flex items-center gap-16 ml-auto">
         <button
           onClick={() => scrollToSection("skills")}

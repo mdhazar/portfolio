@@ -7,7 +7,7 @@ function MainSection() {
   const links = useLinks();
 
   return (
-    <main className="mt-8 md:mt-12 mb-8 md:mb-12 px-4 md:px-6 lg:px-8">
+    <main className="mt-8 md:mt-12 mb-8 md:mb-12 ">
       <div className="flex flex-col lg:flex-row justify-between min-h-[500px] gap-8 lg:gap-12">
         <div className="text-left lg:w-1/2 flex flex-col justify-between">
           <div>
