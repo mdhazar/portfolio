@@ -150,36 +150,36 @@ function ProjectsSection() {
       <h3 className="text-2xl font-bold mb-8 dark:text-[#AEBCCF]">
         {language.projects}
       </h3>
-      <div className="mx-auto min-h-[600px]">
+      <div className="mx-auto min-h-[600px] ">
         <Slider {...settings}>
           {projects.map((project) => (
             <div key={project.id} className="px-2 h-[500px] gap-2   ">
-              <div className="bg-gray-300 dark:bg-gray-800 rounded-xl shadow-lg h-full flex flex-col border">
+              <div className="bg-slate-100 dark:bg-slate-700 rounded-xl   h-full flex flex-col hover:shadow-xl transition-shadow duration-200 ">
                 <div className="h-[300px] relative ">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="absolute inset-0 w-full h-full object-fit object-center rounded-t-xl"
+                    className="absolute inset-0 w-full h-full object-fit object-center rounded-t-xl "
                   />
                 </div>
-                <div className="p-2 flex-1 flex flex-col">
+                <div className="p-2 flex-1 flex flex-col ">
                   <h4 className="text-base font-bold mb-2 dark:text-white ">
                     {project.title}
                   </h4>
                   <p className="text-gray-600 dark:text-gray-300 mb-2 flex-1 text-[13px] ">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-2">
+                  <div className="flex flex-wrap gap-2 mb-2 ">
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="px-2 py-0 bg-gray-200 dark:bg-gray-700 rounded-full text-[12px] dark:text-gray-300"
+                        className="px-2 py-0 bg-gray-200 dark:bg-gray-600 rounded-full text-[12px] dark:text-gray-300"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <div className="flex gap-6 mt-auto">
+                  <div className="flex gap-6 mt-auto px-2 ">
                     <a
                       href={project.githubLink}
                       target="_blank"

@@ -58,7 +58,7 @@ function SkillsSection() {
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="bg-gray-300 dark:bg-gray-800 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 "
+            className="bg-slate-100 dark:bg-slate-700 rounded-lg p-4 shadow-md hover:shadow-xl transition-shadow duration-200 "
           >
             <div className="flex items-center mb-2">
               <span className="text-xl mr-2">{skill.icon}</span>
