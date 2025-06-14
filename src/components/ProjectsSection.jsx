@@ -8,6 +8,7 @@ import form from "../assets/form.png";
 import subtitle_splitter from "../assets/subtitle_splitter.gif";
 import turkish_ipa_converter from "../assets/ipa.png";
 import ecommerce_jquery from "../assets/ecomjquery.png";
+import CVapplication from "../assets/CVapplication.png";
 import api from "../assets/api.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -107,6 +108,15 @@ function ProjectsSection() {
       githubLink: "https://github.com/mdhazar/pizza-order",
       liveLink: "https://pizza-order-orpin.vercel.app",
       technologies: ["React Router", "Axios"],
+    },
+    {
+      id: 10,
+      title: "Cv Application",
+      description: "A CV builder that lets you download your CV as PDF",
+      image: CVapplication,
+      githubLink: "https://github.com/mdhazar/CV-Application",
+      liveLink: "https://cv-application-one-mu.vercel.app",
+      technologies: ["React"],
     },
   ];
 
