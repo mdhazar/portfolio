@@ -23,8 +23,8 @@ function ProjectsSection() {
       description: "A beautiful ecommerce website built with React",
       image: ecommerce,
       githubLink: "https://github.com/mdhazar/ecommerce",
-      liveLink: "https://ecommerce-rho-gules.vercel.app",
-      technologies: ["React", "Tailwind CSS"],
+      liveLink: "https://ecommerce-eta-one-57.vercel.app",
+      technologies: ["React", "TypeScript"],
     },
     {
       id: 2,
