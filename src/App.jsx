@@ -10,13 +10,13 @@ import "./App.css";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import "@fontsource/inter";
 import { Outlet, useNavigate, useLocation } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Redirect to home if on an unknown route
   if (location.pathname !== "/") {
     navigate("/");
   }
@@ -36,6 +36,7 @@ function App() {
           <ProfileSection />
         </div>
         <Footer />
+        <Analytics />
       </div>
     </div>
   );

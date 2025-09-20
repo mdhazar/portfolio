@@ -3,7 +3,7 @@ export const languageData = {
     welcomeMessage1: "Creative thinker",
     welcomeMessage2: "Minimalism lover",
     introText:
-      "Hi, I’m Mehmet Derya Hazar. I’m a full-stack developer. If you are looking for a Developer who can craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
+      "Hi, I’m Mehmet Derya Hazar. I’m a full-stack developer. If you are looking for a Developer who can craft solid and scalable web products with great user experiences. Let’s shake hands with me.",
     hireMe: "Hire me",
     birthday: "Date of Birth",
     adress: "Adress",
@@ -23,7 +23,7 @@ export const languageData = {
     welcomeMessage1: "Yaratıcı düşünür",
     welcomeMessage2: "Minimalizm aşığı",
     introText:
-      "Merhaba, ben Mehmet Derya Hazar. Full-stack geliştiricisiyim. Harika kullanıcı deneyimlerine sahip sağlam ve ölçeklenebilir frontend ürünleri geliştirecek bir geliştirici arıyorsanız, el sıkışalım.",
+      "Merhaba, ben Mehmet Derya Hazar. Full-stack geliştiricisiyim. Harika kullanıcı deneyimlerine sahip sağlam ve ölçeklenebilir web uygulamaları geliştirecek bir geliştirici arıyorsanız, el sıkışalım.",
     hireMe: "İşe al",
     birthday: "Doğum Tarihi",
     adress: "Adres",
