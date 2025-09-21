@@ -11,6 +11,7 @@ import { useLocalStorage } from "./hooks/useLocalStorage";
 import "@fontsource/inter";
 import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
@@ -37,6 +38,7 @@ function App() {
         </div>
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </div>
     </div>
   );
