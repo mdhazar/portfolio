@@ -12,6 +12,7 @@ import CVapplication from "../assets/CVapplication.png";
 import api from "../assets/api.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import nextjs_ecommerce from "../assets/nextjsEcommerce.png";
 
 function ProjectsSection() {
   const { language } = useLanguage();
@@ -19,6 +20,16 @@ function ProjectsSection() {
   const projects = [
     {
       id: 1,
+      title: "Nextjs Ecommerce",
+      description:
+        "A beautiful ecommerce website built with Nextjs and Auth.js",
+      image: nextjs_ecommerce,
+      githubLink: "https://github.com/mdhazar/nextjs-ecommerce",
+      liveLink: "nextjs-ecommerce-green.vercel.app",
+      technologies: ["Nextjs", "TypeScript", "Auth.js"],
+    },
+    {
+      id: 2,
       title: "Ecommerce Website",
       description: "A beautiful ecommerce website built with React",
       image: ecommerce,
@@ -27,7 +38,7 @@ function ProjectsSection() {
       technologies: ["React", "TypeScript"],
     },
     {
-      id: 2,
+      id: 3,
       title: "Subtitle Splitter",
       description: "Segment subtitles based on pre-defined timecodes",
       image: subtitle_splitter,
@@ -36,7 +47,7 @@ function ProjectsSection() {
       technologies: ["Python"],
     },
     {
-      id: 3,
+      id: 4,
       title: "Ecommerce with Jquery",
       description: "A beautiful ecommerce website built with Jquery",
       image: ecommerce_jquery,
@@ -47,7 +58,7 @@ function ProjectsSection() {
       technologies: ["Javascript", "Jquery"],
     },
     {
-      id: 4,
+      id: 5,
       title: "Api Project",
       description: "A simple fecthapi project",
       image: api,
@@ -57,7 +68,7 @@ function ProjectsSection() {
       technologies: ["Javascript", "Api"],
     },
     {
-      id: 5,
+      id: 6,
       title: "Turkish IPA Converter",
       description:
         "Developed a tool to convert Turkish words to IPA for murfai",
@@ -67,7 +78,7 @@ function ProjectsSection() {
       technologies: ["Javascript"],
     },
     {
-      id: 6,
+      id: 7,
       title: "Andor",
       description: "A website for my favorite tv show",
       image: andor,
@@ -79,7 +90,7 @@ function ProjectsSection() {
     },
 
     {
-      id: 7,
+      id: 8,
       title: "ToDo List",
       description: "A simple Todo list with starwars theme and filter",
       image: todo,
@@ -90,7 +101,7 @@ function ProjectsSection() {
       technologies: ["Javascript"],
     },
     {
-      id: 8,
+      id: 9,
       title: "Form",
       description: "A simple form with Jquery and darkmode toggle",
       image: form,
@@ -101,7 +112,7 @@ function ProjectsSection() {
     },
 
     {
-      id: 9,
+      id: 10,
       title: "Pizza Order",
       description: "An e-commerce platform with modern features",
       image: pizzaOrder,
@@ -110,7 +121,7 @@ function ProjectsSection() {
       technologies: ["React Router", "Axios"],
     },
     {
-      id: 10,
+      id: 11,
       title: "Cv Application",
       description: "A CV builder that lets you download your CV as PDF",
       image: CVapplication,
