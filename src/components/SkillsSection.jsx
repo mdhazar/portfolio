@@ -9,42 +9,44 @@ function SkillsSection() {
 
       category: "Frontend",
       icon: "💻",
-      description: "ES6+, DOM Manipulation, Async Programming",
+      description: "ES6+, DOM Manipulation, Async Programming, Axios, Fetch",
     },
     {
       name: "React.js",
 
       category: "Frontend",
       icon: "⚛️",
-      description: "Hooks, Context API, Custom Components",
+      description:
+        "Hooks, Context API, Custom Components, React Native, Next.js, Tailwind CSS, Redux, Zustand",
     },
     {
       name: "Node.js",
 
       category: "Backend",
       icon: "🟢",
-      description: "Express.js, REST APIs, Middleware",
+      description:
+        "Express.js, REST APIs, Middleware, JWT, Socket.io, WebSocket",
     },
     {
       name: "Java",
 
       category: "Backend",
       icon: "☕",
-      description: "OOP, Spring Boot, JUnit",
+      description: "OOP, Spring Boot, JUnit, Spring Security, Spring Data JPA",
     },
     {
       name: "Python",
 
       category: "Backend",
       icon: "🐍",
-      description: "Data Analysis, Flask, Automation",
+      description: "Django, Flask, FastAPI, Automation, Pytest",
     },
     {
       name: "SQL",
 
       category: "Database",
       icon: "🗄️",
-      description: "MySQL, PostgreSQL, Query Optimization",
+      description: "MySQL, PostgreSQL, Query Optimization, MongoDB, Redis",
     },
   ];
 

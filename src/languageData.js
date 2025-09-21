@@ -18,6 +18,11 @@ export const languageData = {
     profile: "Profile",
     switch1: "Türkçe",
     switch2: "'ye geç",
+    aboutText:
+      "I’m a Full Stack Developer with a unique blend of analytical thinking and hands-on coding expertise. After building a foundation in data quality control, I transitioned into software development, completing intensive training and real-world projects. ",
+    aboutText2:
+      "Proficient in JavaScript, React, Java, Python, and cloud technologies, I specialize in crafting scalable, user-friendly applications. I bring curiosity, adaptability, and a drive to solve complex challenges in collaborative, innovative environments.",
+    educationText: "METU Philosophy, 2020",
   },
   tr: {
     welcomeMessage1: "Yaratıcı düşünür",
@@ -38,5 +43,10 @@ export const languageData = {
     profile: "Profil",
     switch1: "English",
     switch2: "",
+    aboutText:
+      "Felsefe eğitimiyle başladığım yolculuğum, veri kalite kontrolünden yazılım geliştirmeye uzandı. Bugün, frontend ve backend teknolojileri üzerine inşa ettiğim bilgi ve deneyimimle kullanıcıların hayatını kolaylaştıran, ölçeklenebilir uygulamalar geliştiriyorum. ",
+    aboutText2:
+      "Kod yazarken hem mantıksal bir bakış açısı hem de yaratıcı bir dokunuş katmayı seviyorum. Öğrenmeye ve gelişmeye açık bir geliştirici olarak, teknolojiyle gerçek sorunlara çözüm üretmeyi tutkuyla sürdürüyorum.",
+    educationText: "ODTÜ Felsefe, 2020",
   },
 };

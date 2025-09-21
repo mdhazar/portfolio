@@ -18,11 +18,11 @@ function ProfileSection() {
           </li>
           <li className="grid grid-cols-2 ">
             <strong>{language.education}</strong>
-            <span>ODTÜ Felsefe, 2020</span>
+            <span>{language.educationText}</span>
           </li>
           <li className="grid grid-cols-2 ">
             <strong>{language.role}</strong>
-            <span>Frontend, UI</span>
+            <span>Full Stack, Frontend, Backend, Mobile</span>
           </li>
         </ul>
       </div>
@@ -30,14 +30,8 @@ function ProfileSection() {
         <h3 className="text-2xl font-bold mb-4 text-[#4338CA] dark:text-[#B7AAFF]">
           {language.about}
         </h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut,
-          odit laborum aliquam voluptatum nisi mollitia.
-        </p>
-        <p>
-          Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod
-          deserunt quam temporibus cumque magnam!
-        </p>
+        <p>{language.aboutText}</p>
+        <p>{language.aboutText2}</p>
       </div>
     </section>
   );
