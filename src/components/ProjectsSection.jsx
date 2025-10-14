@@ -25,7 +25,7 @@ function ProjectsSection() {
         "A beautiful ecommerce website built with Nextjs and Auth.js",
       image: nextjs_ecommerce,
       githubLink: "https://github.com/mdhazar/nextjs-ecommerce",
-      liveLink: "nextjs-ecommerce-green.vercel.app",
+      liveLink: "https://nextjs-ecommerce-green.vercel.app/login",
       technologies: ["Nextjs", "TypeScript", "Auth.js"],
     },
     {
