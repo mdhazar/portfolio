@@ -19,7 +19,10 @@ function syncThemeColor(theme: Theme) {
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() =>
-    document.documentElement.classList.contains("light") ? "light" : "dark",
+    typeof document !== "undefined" &&
+    document.documentElement.classList.contains("light")
+      ? "light"
+      : "dark",
   );
 
   // Keep <meta name="theme-color"> in sync with the resolved theme, including
