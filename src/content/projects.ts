@@ -38,8 +38,8 @@ export const featuredProjects: FeaturedProject[] = [
     liveUrl: "https://ecommerce-eta-one-57.vercel.app",
     image: {
       src: reactEcommerceImg,
-      width: 880,
-      height: 552,
+      width: 1200,
+      height: 750,
       alt: {
         en: "React Ecommerce storefront screenshot",
         tr: "React Ecommerce mağaza ekran görüntüsü",

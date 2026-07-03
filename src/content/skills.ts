@@ -9,7 +9,7 @@ export const skillGroups: SkillGroup[] = [
   {
     id: "frontend",
     label: { en: "frontend", tr: "frontend" },
-    items: ["React", "Next.js (App Router)", "React Native", "Redux", "Tailwind CSS", "Vue.js", "jQuery"],
+    items: ["React", "Next.js (App Router)", "TanStack Start", "React Native", "Redux", "Zustand", "Axios", "Zod", "Tailwind CSS", "Vue.js", "jQuery"],
   },
   {
     id: "backend-data",
